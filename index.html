@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function changeContent(section) {
+            var content = document.getElementById("isi");
+
+            if (section === "bio") {
+                content.innerHTML = `
+                    <h3>BIODATA</h3><br>
+                    <p>NIM: 2023081033</p><br>
+                    <p>Nama: Abid Ramadhan Rachmat</p><br>
+                    <p>Agama: Islam</p><br>
+                    <p>Tanggal Lahir: 21 Oktober 2005</p><br>
+                    <p>Tempat Lahir: Tangerang</p>
+                `;
+            } else if (section === "Pendidikan") {
+                content.innerHTML = `
+                    <h3>PENDIDIKAN</h3><br>
+                    <p>SD: MIN2 Kota Tangerang Selatan</p><br>
+                    <p>SMP: Pon-Pes Al-Amanah Al-Gontory</p><br>
+                    <p>SMA: Pon-Pes Al-Amanah Al-Gontory</p><br>
+                    <p>S1: Universitas Pembangunan Jaya</p>
+                `;
+            } else if (section === "pengalaman") {
+                content.innerHTML = `
+                    <h3>PENGALAMAN</h3><br>
+                    <p>Internship: Asisten CEO</p>
+                `;
+            } else if (section === "keahlian") {
+                content.innerHTML = `
+                    <h3>KEAHLIAN</h3><br>
+                    <p>Dapat Berfikir Tenang Dalam Keadaan Terdesak</p>
+                `;
+            } else if (section === "publikasi") {
+                content.innerHTML = `
+                    <h3>PUBLIKASI</h3><br>
+                    <p>INCREDIBLE</p><br>
+                    <p>Intellectual Creator Of Media Publishzer</p>
+                `;
+            }
+        }
+    </script>
+
+    <header>
+        <img src="fotoprofil.jpg" class="img_saya" alt="foto saya">
+        <h3>Profile Mahasiswa</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="changeContent('bio');">BIODATA</a></li>
+            <li><a href="#" onclick="changeContent('Pendidikan');">PENDIDIKAN</a></li>
+            <li><a href="#" onclick="changeContent('pengalaman');">PENGALAMAN</a></li>
+            <li><a href="#" onclick="changeContent('keahlian');">KEAHLIAN</a></li>
+            <li><a href="#" onclick="changeContent('publikasi');">PUBLIKASI</a></li>
+        </ul>
+    </nav>
+
+    <section id="isi">
+        <h3>BIODATA</h3><br>
+        <p>NIM: 2023081033</p><br>
+        <p>Nama: Abid Ramadhan Rachmat</p><br>
+        <p>Agama: Islam</p><br>
+        <p>Tanggal Lahir: 21 Oktober 2005</p><br>
+        <p>Tempat Lahir: Tangerang</p>
+    </section>
+
+    <aside>
+        <h3>HOBI</h3><br>
+            <p>Mendengar Musik</p><br>
+            <p>Bermain Games</p><br>
+            <p>Membaca Komik</p><br>
+            <p>Ngoding</p>
+    </aside>
+
+    <footer>
+        <div class="media-social">
+            <p>Facebook: Abid_rmdn21</p>
+            <p>Instagram: @abid_rmdn_</p>
+        </div>
+        <div class="Copyright">
+            <p>&copy; 2024. All Rights Reserved.</p>
+        </div>
+        <div class="web_name">
+            <p><strong>Rmdn-WEB</strong></p>
+            <p>Rajin pangkal pandai, hemat pangkal kaya.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
